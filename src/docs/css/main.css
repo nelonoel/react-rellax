@@ -4,7 +4,8 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
   text-rendering: optimizeLegibility;
   color: #222;
-  overflow-x: hidden;
+	overflow-x: hidden;
+	position: relative;
 }
 h4 {
   font-size: 22px;
@@ -207,9 +208,11 @@ section.san-francisco {
 
 .text-editor {
   background: #222;
-  padding: 60px 50px;
+	padding: 60px 50px;
+	position: relative;
   border-radius: 12px;
-  margin-left: 15px;
+	margin-left: 15px;
+	z-index: 2;
 }
 code {
   text-align: left;
@@ -265,7 +268,8 @@ code {
 
 .share {
   position: relative;
-  top: -240px;
+	top: -240px;
+	z-index: 2;
 }
 .share a {
   font-size: 34px;
