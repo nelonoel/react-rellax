@@ -12,8 +12,6 @@ npm i --save react-rellax
 
 ## Props
  - `centered` _(bool)_ : Centers the component on the viewport
- - `children` _(node)_ : React node
- - `className` _(string)_ : Component class
  - `horizontal` _(bool)_ : Horizontal scrolling
  - `onMove` _(func)_ : Callback on position change
  - `percentage` _(number)_ : Initial scroll percentage
