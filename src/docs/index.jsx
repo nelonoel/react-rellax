@@ -193,9 +193,9 @@ function Demo() {
 								<div className="col-md-offset-2 col-md-8">
 									<div className="text-editor">
 										<code>
-											&lt;Parallax <span className="purple">speed</span>="<span className="green">6</span>"&gt;<br />
+											&lt;Parallax<span className="purple">&nbsp;speed</span>={`{`}<span className="green">6</span>{`}`}&gt;<br />
 											<span className="white">&nbsp;&nbsp;I’m slow and smooth</span><br />
-											&lt;/div&gt;
+											&lt;/Parallax&gt;
                     </code>
 									</div>
 								</div>
