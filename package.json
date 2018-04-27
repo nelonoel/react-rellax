@@ -40,5 +40,8 @@
     "type": "git",
     "url": "git@github.com:yogaboll/react-npm-component-starter.git"
   },
-  "dependencies": {}
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "rellax": "^1.6.2"
+  }
 }
