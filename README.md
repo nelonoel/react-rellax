@@ -1,9 +1,7 @@
 # react-rellax
+[Demo](https://nelonoel.github.io/react-rellax)
 
-React Parallax component based on [rellax](https://github.com/dixonandmoe/rellax).
-
-## ⚠️ Notice
-Active work in progress
+React Parallax component using [Rellax.js](https://github.com/dixonandmoe/rellax).
 
 ## Installation
 ```

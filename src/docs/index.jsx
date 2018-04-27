@@ -34,34 +34,39 @@ function Demo() {
 				<header>
 					<div className="container">
 						<div className="row">
-							<div className="col-md-offset-1 col-md-11">
-								<a href="http://dixonandmoe.com/">
-									<h2>BY DIXON & MOE
+							<div className="col-xs-offset-1 col-xs-5">
+								<a href="//dixonandmoe.com">
+									<h2>BY DIXON &amp; MOE
 										<span>➔</span>
 									</h2>
 								</a>
 								<div className="white-block"></div>
 							</div>
+							<div className="col-xs-offset-1≠ col-xs-5">
+								<a href="//nelo.is">
+									<h2>PORTED BY NELO
+										<span>➔</span>
+									</h2>
+								</a>
+							</div>
 						</div>
 						<div className="title">
 							<div className="row">
 								<div className="col-md-offset-1 col-md-6">
-									<h1>react-rellax
-										<span>JS</span>
-									</h1>
+									<h1>react-rellax</h1>
 								</div>
 								<div className="col-md-4 text-right">
-									<a href="https://github.com/dixonandmoe/rellax">GITHUB</a>
+									<a href="https://github.com/nelonoel/react-rellax">GITHUB</a>
 								</div>
 							</div>
 						</div>
 						<div className="subtitle">
 							<div className="row">
 								<div className="col-md-offset-1 col-md-2">
-									<h3>Light (871b gz)</h3>
+									<h3>React Component</h3>
 								</div>
-								<div className="col-md-2">
-									<h3>Vanilla Javascript</h3>
+								<div className="col-md-3">
+									<h3>No manual initialization</h3>
 								</div>
 								<div className="col-md-2">
 									<h3>Parallax Library</h3>
@@ -76,7 +81,7 @@ function Demo() {
 						<div className="container">
 							<div className="row">
 								<div className="col-md-offset-1 col-md-11">
-									<Parallax as="h2" speed={-3}>San Francisco<br />California</Parallax>
+									<Parallax as="h2" speed={-3}>Quezon City<br />Philippines</Parallax>
 								</div>
 							</div>
 						</div>
@@ -125,17 +130,35 @@ function Demo() {
 				<section className="section">
 					<div style={{ marginTop: '200px' }}>
 						<div className="container">
+
 							<div className="row">
-								<div className="col-md-12 text-center">
-									<h4>JAVASCRIPT (ACCEPTS ANY CLASS NAME)</h4>
+								<div className="col-md-12 text-center" style={{ marginTop: '40px' }}>
+									<h4>INSTALLATION</h4>
 								</div>
 							</div>
+
 							<div className="row">
 								<div className="col-md-offset-2 col-md-8">
 									<div className="text-editor">
 										<code>
-											<span className="purple">var</span> rellax = <span className="green">new</span> <span className="white">Rellax</span>('.rellax');
-                    </code>
+											npm <span className="purple">i</span> --save <span className="white">react-rellax</span>
+										</code>
+									</div>
+								</div>
+							</div>
+
+							<div className="row">
+								<div className="col-md-12 text-center" style={{ marginTop: '40px' }}>
+									<h4>USAGE</h4>
+								</div>
+							</div>
+
+							<div className="row">
+								<div className="col-md-offset-2 col-md-8">
+									<div className="text-editor">
+										<code>
+											<span className="purple">import</span> Parallax <span className="green">from</span> <span className="white">'react-rellax'</span>
+										</code>
 									</div>
 								</div>
 							</div>
@@ -151,9 +174,9 @@ function Demo() {
 								<div className="col-md-offset-2 col-md-8">
 									<div className="text-editor">
 										<code>
-											&lt;div <span className="purple">class</span>="<span className="green">rellax</span>"&gt;<br />
-											<span className="white">&nbsp;&nbsp;I’m slow and smooth</span><br />
-											&lt;/div&gt;
+											&lt;Parallax&gt;
+											<span className="white">&nbsp;I’m slow and smooth&nbsp;</span>
+											&lt;/Parallax&gt;
                     </code>
 									</div>
 								</div>
@@ -170,7 +193,7 @@ function Demo() {
 								<div className="col-md-offset-2 col-md-8">
 									<div className="text-editor">
 										<code>
-											&lt;div <span className="purple">class</span>="<span className="green">rellax</span>" <span className="purple">speed</span>="<span className="green">6</span>"&gt;<br />
+											&lt;Parallax <span className="purple">speed</span>="<span className="green">6</span>"&gt;<br />
 											<span className="white">&nbsp;&nbsp;I’m slow and smooth</span><br />
 											&lt;/div&gt;
                     </code>
@@ -211,19 +234,18 @@ function Demo() {
 							<div className="row">
 								<div className="col-md-offset-1 col-md-6">
 									<h4>SERIOUSLY, WHY?!</h4>
-									<p>Come on, how boring is the internet without excessive javascript? We made this library since too many github repos
-										are abandoned (RIP skrollr) or feature creepy. You got some beef or caught us slippin on unit tests, send rants and
-										10mb gifs to
-								<a href="mailto:moe@dixonandmoe.">moe@dixonandmoe.com</a>
+									<p>
+										Because <a href="https://github.com/dixonandmoe/rellax">Rellax.js</a> is awesome.
+										Big thanks to <a href="//dixonandmoe.com">Dixon & Moe</a> for creating a minimal Parallax library,
+										it was easy enough to port into React.
 									</p>
 								</div>
 							</div>
 
 							<div className="row" style={{ marginTop: '140px' }}>
 								<div className="col-md-offset-5 col-md-6">
-									<h4>BUT ACTUALLY</h4>
-									<p>We've benefitted so much from open source projects that we're actively trying to give back. As designers, we're starting
-								by releasing our own quirky js code.</p>
+									<h4>DOCUMENTATION</h4>
+									<p>View full documentation and source code in <a href="https://github.com/nelonoel/react-rellax">Github</a>.</p>
 								</div>
 							</div>
 						</div>
@@ -236,13 +258,16 @@ function Demo() {
 							<div className="col-md-offset-1 col-md-3">
 								<a className="dam" href="http://dixonandmoe.com/">Dixon &amp; Moe</a>
 							</div>
-							<div className="col-md-offset-3 col-md-2">
-								<a href="https://www.facebook.com/sharer/sharer.php?u=http://dixonandmoe.com/rellax/">Share
+							<div className="col-md-2">
+								<a className="dam" href="https://nelo.is">Nelo</a>
+							</div>
+							<div className="col-md-offset-1 col-md-2">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=https://nelonoel.github.io/react-rellax">Share
 							<span>➔</span>
 								</a>
 							</div>
 							<div className="col-md-offset-0 col-md-2">
-								<a href="https://twitter.com/share?url=http://dixonandmoe.com/rellax/">Tweet
+								<a href="https://twitter.com/share?url=https://nelonoel.github.io/react-rellax">Tweet
 							<span>➔</span>
 								</a>
 							</div>

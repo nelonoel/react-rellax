@@ -50,16 +50,8 @@ header .title {
 header h1 {
   font-size: 96px;
   font-weight: 900;
-  letter-spacing: 0.12em;
   margin: 0;
   margin-left: -6px;
-}
-header h1 span {
-  display: inline-block;
-  font-size: 20px;
-  margin-top: 18px;
-  vertical-align: top;
-  letter-spacing: 0;
 }
 header .title a {
   display: inline-block;
