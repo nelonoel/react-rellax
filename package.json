@@ -1,7 +1,7 @@
 {
 	"name": "react-rellax",
 	"version": "0.1.0",
-	"description": "A minimal boilerplate for building a react component for npm, including a demo page.",
+	"description": "React Parallax component using Rellax.js",
 	"main": "lib/index.js",
 	"scripts": {
 		"dev": "concurrently \"npm run lib:watch\" \"npm run docs\"",
@@ -10,7 +10,11 @@
 		"docs": "webpack-dev-server --mode development",
 		"docs:prod": "webpack --mode production"
 	},
-	"keywords": [],
+	"keywords": [
+		"react",
+		"rellax",
+		"parallax"
+	],
 	"license": "MIT",
 	"peerDependencies": {
 		"react": "^15.3.0 || ^16.2.0",
@@ -36,11 +40,11 @@
 		"webpack-cli": "^2.0.15",
 		"webpack-dev-server": "^3.1.3"
 	},
-	"author": "Markus Englund <markus.s.englund@gmail.com>",
-	"homepage": "https://github.com/yogaboll/react-npm-component-starter",
+	"author": "Aaron Noel De Leon <aaronnoeldeleon@gmail.com>",
+	"homepage": "https://github.com/nelonoel/react-rellax",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:yogaboll/react-npm-component-starter.git"
+		"url": "git@github.com:nelonoel/react-rellax.git"
 	},
 	"dependencies": {
 		"prop-types": "^15.6.1",
