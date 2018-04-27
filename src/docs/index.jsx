@@ -52,10 +52,10 @@ function Demo() {
 						</div>
 						<div className="title">
 							<div className="row">
-								<div className="col-md-offset-1 col-md-6">
+								<div className="col-md-offset-1 col-md-7">
 									<h1>react-rellax</h1>
 								</div>
-								<div className="col-md-4 text-right">
+								<div className="col-md-3 text-right">
 									<a href="https://github.com/nelonoel/react-rellax">GITHUB</a>
 								</div>
 							</div>
