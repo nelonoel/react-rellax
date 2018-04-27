@@ -6,11 +6,21 @@ export default class Parallax extends PureComponent {
 	componentDidMount() {
 		if (this.el) {
 			const { centered, horizontal, onMove } = this.props
-			this.rellax = new Rellax(this.el, {
-				centered,
-				horizontal,
-				callback: onMove
-			})
+			const config = {}
+
+			if (centered) {
+				config.centered = true
+			}
+
+			if (horizontal) {
+				config.horizontal = true
+			}
+
+			if (typeof onMove === 'function') {
+				config.callback = onMove.bind(this)
+			}
+
+			this.rellax = new Rellax(this.el, config)
 		}
 	}
 
@@ -21,26 +31,24 @@ export default class Parallax extends PureComponent {
 	}
 
 	render() {
-		const { children, className, percentage, speed, zIndex } = this.props
+		const { as, percentage, speed, zIndex, ...props } = this.props
+		const CustomComponent = as
 
 		return (
-			<div
-				className={className}
+			<CustomComponent
 				ref={el => { this.el = el }}
 				data-rellax-percentage={percentage}
 				data-rellax-speed={speed}
 				data-rellax-zindex={zIndex}
-			>
-				{children}
-			</div>
+				{...props}
+			/>
 		)
 	}
 }
 
 Parallax.propTypes = {
+	as: PropTypes.string,
 	centered: PropTypes.bool,
-	children: PropTypes.node,
-	className: PropTypes.string,
 	horizontal: PropTypes.bool,
 	onMove: PropTypes.func,
 	percentage: PropTypes.number,
@@ -49,12 +57,5 @@ Parallax.propTypes = {
 }
 
 Parallax.defaultProps = {
-	centered: false,
-	children: null,
-	className: null,
-	horizontal: false,
-	onMove: null,
-	percentage: 0,
-	speed: 0,
-	zIndex: 0
+	as: 'div'
 }
