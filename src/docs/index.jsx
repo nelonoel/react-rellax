@@ -65,11 +65,11 @@ function Demo() {
 								<div className="col-md-offset-1 col-md-2">
 									<h3>React Component</h3>
 								</div>
-								<div className="col-md-3">
-									<h3>No manual initialization</h3>
-								</div>
 								<div className="col-md-2">
 									<h3>Parallax Library</h3>
+								</div>
+								<div className="col-md-3">
+									<h3>No manual initialization</h3>
 								</div>
 							</div>
 						</div>
