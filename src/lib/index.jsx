@@ -31,11 +31,11 @@ export default class Parallax extends PureComponent {
 	}
 
 	render() {
-		const { as, percentage, speed, zIndex, ...props } = this.props
-		const CustomComponent = as
+		const { as, centered, horizontal, onMove, percentage, speed, zIndex, ...props } = this.props
+		const Tag = as
 
 		return (
-			<CustomComponent
+			<Tag
 				ref={el => { this.el = el }}
 				data-rellax-percentage={percentage}
 				data-rellax-speed={speed}
