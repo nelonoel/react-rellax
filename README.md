@@ -1,5 +1,5 @@
 # react-rellax
-[Demo](https://nelonoel.github.io/react-rellax)
+[Live Demo](https://open.nelo.is/react-rellax)
 
 React Parallax component using [Rellax.js](https://github.com/dixonandmoe/rellax).
 
