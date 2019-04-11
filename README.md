@@ -21,3 +21,4 @@ npm i --save react-rellax
  - `percentage` _(num)_ : Initial scroll percentage
  - `speed` _(int)_ : Integer >= -10 && <=10 determines scroll speed. Default: `-2`
  - `zIndex` _(int)_ : Orders component on the z-axis
+ - `wrapper` _(str)_ : Selector to use as a wrapper from which to calculate parallax position.

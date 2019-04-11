@@ -1,6 +1,6 @@
 {
 	"name": "react-rellax",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "React Parallax component using Rellax.js",
 	"main": "lib/index.js",
 	"scripts": {
@@ -48,6 +48,6 @@
 	},
 	"dependencies": {
 		"prop-types": "^15.6.1",
-		"rellax": "^1.6.2"
+		"rellax": "^1.9.1"
 	}
 }

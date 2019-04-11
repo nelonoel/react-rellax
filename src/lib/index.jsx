@@ -5,7 +5,7 @@ import Rellax from 'rellax'
 export default class Parallax extends PureComponent {
 	componentDidMount() {
 		if (this.el) {
-			const { centered, horizontal, onMove } = this.props
+			const { centered, horizontal, onMove, wrapper } = this.props
 			const config = {}
 
 			if (centered) {
@@ -14,6 +14,10 @@ export default class Parallax extends PureComponent {
 
 			if (horizontal) {
 				config.horizontal = true
+			}
+
+			if (wrapper) {
+				config.wrapper = wrapper
 			}
 
 			if (typeof onMove === 'function') {
